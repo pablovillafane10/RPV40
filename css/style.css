@@ -19,13 +19,13 @@ body{
 header {
     background-color: rgb(36, 36, 36);
     padding: 20px;
-    position: relative; /* Añadido para permitir la posición absoluta dentro de .top-bar */
+    position: relative; 
 }
 
 .top-bar {
     display: flex;
     justify-content: space-between;
-    position: relative; /* Aseguramos que el contenedor de la barra tenga un contexto de posición */
+    position: relative; 
 }
 
 .top-bar img {
@@ -36,7 +36,7 @@ header {
 .top-bar p {
     position: absolute; /* Esto lo coloca en una posición específica dentro de .top-bar */
     top: 0; /* Se coloca en la parte superior */
-    right: 0; /* Se coloca en la parte derecha */
+    right: 0; 
     margin: 0;
     color: white;
 }
@@ -509,7 +509,7 @@ input[type="submit"]:hover {
 .autos-en-venta {
     padding: 20px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr); /* Tres tarjetas por fila */
     gap: 20px;
     background-color: #f5f5f5;
 }
@@ -521,7 +521,12 @@ input[type="submit"]:hover {
     padding: 20px;
     text-align: center;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+
+    height: 100%; 
 }
+
 
 .auto:hover {
     transform: scale(1.03); 
@@ -529,12 +534,13 @@ input[type="submit"]:hover {
 }
 
 .auto img {
-    width: 100%;
-    max-width: 200px; 
-    height: auto;
-    margin-bottom: 15px;
+    width: 100%; /* Se adapta al ancho disponible */
+    height: 150px; /* Altura fija para todas las imágenes */
+    object-fit: contain; /* Mantiene las proporciones originales */
+    margin: 0 auto 10px; /* Centra la imagen y deja espacio inferior */
     border-radius: 8px;
 }
+
 
 .auto h2 {
     font-size: 18px;
@@ -551,11 +557,19 @@ input[type="submit"]:hover {
     margin-bottom: 12px;
 }
 
-.auto h3 {
-    font-size: 24px; 
-    color: #333;
-    font-weight: bold;
-    margin: 0;
+.auto .btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-block;
+    margin-top: auto; /* Empuja el botón al final de la tarjeta */
+}
+
+.auto .btn:hover {
+    background-color: #0056b3;
 }
 
 @media (max-width: 1024px) {
@@ -568,23 +582,8 @@ input[type="submit"]:hover {
     .autos-en-venta {
         grid-template-columns: 1fr; 
     }
-
-    .auto img {
-        max-width: 100%; 
-    }
-
-    .auto h2 {
-        font-size: 16px; 
-    }
-
-    .auto p {
-        font-size: 12px; 
-    }
-
-    .auto h3 {
-        font-size: 20px; 
-    }
 }
+
 
 /*Vende tu auto*/
 
