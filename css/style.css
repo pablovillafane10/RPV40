@@ -113,7 +113,25 @@ header {
         color: #c41d1d;
     }
 }
+@media (max-width: 450px) {
+    /* Header */
+    .top-bar img {
+        width: 80px;
+        height: 80px;
+    }
 
+    .top-bar p {
+        font-size: 12px;
+    }
+
+    .top-bar nav ul li {
+        margin: 5px 0;
+    }
+
+    .top-bar nav ul li a {
+        font-size: 12px;
+    }
+}
 /*Main Index*/
 
 /*Hero*/
@@ -304,6 +322,7 @@ input[type="submit"]:hover {
     position: fixed;
     bottom: 60px;
     right: 60px;
+    z-index: 3;
 }
 
 .fixed:hover{
@@ -864,5 +883,123 @@ input[type="submit"]:hover {
     .contacto__input,
     .contacto__textarea {
         font-size: 1em;
+    }
+}
+
+/* Responsive para 360px, pero lo hago a partir de 450px */
+@media (max-width: 400px) {
+    /* Header */
+    .top-bar img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .top-bar p {
+        font-size: 12px;
+    }
+
+    .top-bar nav ul li {
+        margin: 5px 0;
+    }
+
+    .top-bar nav ul li a {
+        font-size: 12px;
+    }
+
+    /* Hero */
+    .hero {
+        height: auto;
+        padding: 15px;
+    }
+
+    .hero h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .hero input {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    /* Info */
+    .info {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    /* Presupuesto */
+    .presupuesto {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    input[type="submit"] {
+        font-size: 14px;
+    }
+
+    /* Footer */
+    #footer {
+        padding: 10px;
+    }
+
+    .sobre {
+        gap: 5px;
+    }
+
+    .sobre article {
+        width: 100%;
+    }
+
+    .sobre h3 {
+        font-size: 16px;
+    }
+
+    .sobre div iframe {
+        width: 100%;
+        max-width: none;
+    }
+
+    /* Servicios */
+    .servicios__titulo {
+        font-size: 24px;
+    }
+
+    .servicio__titulo {
+        font-size: 18px;
+    }
+
+    .servicios__lista {
+        gap: 20px;
+    }
+
+    /* Autos en venta */
+    .autos-en-venta {
+        grid-template-columns: 1fr; /* Una tarjeta por fila */
+        gap: 10px;
+    }
+
+    .auto img {
+        height: 100px; /* Reducir altura de las imágenes */
+    }
+
+    .auto {
+        padding: 10px;
+    }
+
+    /* Fixed */
+    .fixed {
+        bottom: 10px;
+        right: 10px;
     }
 }
