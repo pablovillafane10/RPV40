@@ -113,7 +113,8 @@ header {
         color: #c41d1d;
     }
 }
-@media (max-width: 450px) {
+
+@media (max-width: 400px) {
     /* Header */
     .top-bar img {
         width: 80px;
@@ -196,6 +197,23 @@ header {
     }
 }
 
+@media (max-width: 400px) {
+    /* Hero */
+    .hero {
+        height: auto;
+        padding: 15px;
+    }
+
+    .hero h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .hero input {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
 
 
 /*info*/
@@ -220,6 +238,13 @@ header {
         font-size: 24px; /* Ajuste en tamaño de fuente */
         padding: 15px;
     }
+}
+@media (max-width: 400px) {
+    /* Info */
+.info {
+    font-size: 16px;
+    padding: 10px;
+}
 }
 
 /*Presupuesto*/
@@ -295,7 +320,7 @@ input[type="submit"]:hover {
     background-color: #2872cc;
 }
 
-/* Responsive: Estilos para pantallas pequeñas */
+
 @media (max-width: 768px) {
     .presupuesto {
         padding: 30px 15px;
@@ -317,6 +342,29 @@ input[type="submit"]:hover {
     }
 }
 
+@media (max-width: 400px) {
+
+    /* Presupuesto */
+    .presupuesto {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    input[type="submit"] {
+        font-size: 14px;
+    }
+}
+
 /*Fixed*/
 .fixed {
     position: fixed;
@@ -330,7 +378,13 @@ input[type="submit"]:hover {
 
 }
 
-
+@media (max-width: 400px) {
+    /* Fixed */
+    .fixed {
+        bottom: 10px;
+        right: 10px;
+    }
+}
 
 
 
@@ -410,6 +464,29 @@ input[type="submit"]:hover {
         text-align: center;
     }
 }
+@media (max-width: 400px) {
+    /* Footer */
+    #footer {
+        padding: 10px;
+    }
+
+    .sobre {
+        gap: 5px;
+    }
+
+    .sobre article {
+        width: 100%;
+    }
+
+    .sobre h3 {
+        font-size: 16px;
+    }
+
+    .sobre div iframe {
+        width: 100%;
+        max-width: none;
+    }
+}
 
 
 /*Pagina servicios*/
@@ -460,21 +537,65 @@ input[type="submit"]:hover {
     color: #555;
 }
 
+
 @media (max-width: 768px) {
-    .servicios {
-        padding: 15px;
-        max-width: 100%;
+    .servicios__contenido {
+        grid-template-columns: 1fr; /* Para pantallas medianas y móviles, la imagen y la lista de servicios se apilan en una columna */
+    }
+
+    .hombre-llamado img{
+        
+            max-width: 100%;
+            height: auto;
+        
+    }
+
+    .servicios__lista {
+        grid-template-columns: 1fr; /* Los servicios también se apilan en una columna */
+    }
+
+    .servicio {
+        padding: 15px; /* Menos padding en dispositivos pequeños */
     }
 
     .servicios__titulo {
-        font-size: 2em;
+        font-size: 28px; /* Reduce el tamaño del título en pantallas más pequeñas */
+    }
+
+    .servicios__descripcion {
+        font-size: 16px; /* Ajusta el tamaño del texto en dispositivos pequeños */
     }
 
     .servicio__titulo {
-        font-size: 1.5em;
+        font-size: 20px; /* Reduce el tamaño del título de cada servicio */
+    }
+
+    .servicio__descripcion {
+        font-size: 14px; /* Ajusta el tamaño de la descripción de cada servicio */
     }
 }
 
+@media (max-width: 480px) {
+    .servicios__titulo {
+        font-size: 24px; /* Título aún más pequeño para dispositivos muy pequeños */
+    }
+
+    .servicios__descripcion {
+        font-size: 14px; /* Texto más pequeño */
+    }
+
+    .servicio__titulo {
+        font-size: 18px; /* Títulos aún más pequeños */
+    }
+
+    .servicio__descripcion {
+        font-size: 12px; /* Descripción de los servicios más pequeña */
+    }
+
+    .servicios__descripcion {
+        font-size: 14px; /* Ajusta el tamaño de la descripción principal */
+    }
+}
 
 /*Pagina Comprá y vendé*/
 
@@ -495,7 +616,7 @@ input[type="submit"]:hover {
 }
 
 
-.subtitulo-cv p {
+.subtitulo-cv div p {
     font-size: 18px;
     margin: 0;
 }
@@ -603,7 +724,20 @@ input[type="submit"]:hover {
     }
 }
 
+@media (max-width: 400px) {
+    /* Autos en venta */
+    .autos-en-venta {
+        grid-template-columns: 1fr; /* Una tarjeta por fila */
+        gap: 10px;
+    }
+    .auto img {
+        height: 100px; /* Reducir altura de las imágenes */
+    }
 
+    .auto {
+        padding: 10px;
+    }
+}
 /*Vende tu auto*/
 
 .vendetuauto {
@@ -782,17 +916,50 @@ input[type="submit"]:hover {
 
 
 @media (max-width: 768px) {
-    .seccion__titulo {
-        font-size: 2em;
+    .contenedor-grid {
+        grid-template-columns: 1fr; 
+        gap: 20px;
     }
 
-    .equipo__titulo,
-    .vision__titulo,
-    .valores__titulo {
-        font-size: 1.5em;
+    .imagen-nosotros {
+        height: auto; 
+    }
+
+    .nosotros__contenido-derecho {
+        gap: 20px;
+    }
+
+    .nosotros__titulo {
+        font-size: 28px; 
+    }
+
+    .nosotros__descripcion {
+        font-size: 16px;
+    }
+
+    .valores {
+        grid-template-columns: 1fr;
     }
 }
 
+@media (max-width: 480px) {
+    .nosotros__titulo {
+        font-size: 24px; 
+    }
+
+    .nosotros__descripcion {
+        font-size: 14px; 
+    }
+
+    .valores {
+        grid-template-columns: 1fr; 
+        gap: 15px;
+    }
+
+    .valores__item {
+        font-size: 16px; 
+    }
+}
 
 /* Pagina Contacto */
 .contacto {
@@ -883,123 +1050,5 @@ input[type="submit"]:hover {
     .contacto__input,
     .contacto__textarea {
         font-size: 1em;
-    }
-}
-
-/* Responsive para 360px, pero lo hago a partir de 450px */
-@media (max-width: 400px) {
-    /* Header */
-    .top-bar img {
-        width: 80px;
-        height: 80px;
-    }
-
-    .top-bar p {
-        font-size: 12px;
-    }
-
-    .top-bar nav ul li {
-        margin: 5px 0;
-    }
-
-    .top-bar nav ul li a {
-        font-size: 12px;
-    }
-
-    /* Hero */
-    .hero {
-        height: auto;
-        padding: 15px;
-    }
-
-    .hero h1 {
-        font-size: 20px;
-        text-align: center;
-    }
-
-    .hero input {
-        font-size: 14px;
-        padding: 10px;
-    }
-
-    /* Info */
-    .info {
-        font-size: 16px;
-        padding: 10px;
-    }
-
-    /* Presupuesto */
-    .presupuesto {
-        padding: 15px;
-    }
-
-    h2 {
-        font-size: 18px;
-    }
-
-    input[type="text"],
-    input[type="tel"],
-    textarea {
-        font-size: 14px;
-        padding: 8px;
-    }
-
-    input[type="submit"] {
-        font-size: 14px;
-    }
-
-    /* Footer */
-    #footer {
-        padding: 10px;
-    }
-
-    .sobre {
-        gap: 5px;
-    }
-
-    .sobre article {
-        width: 100%;
-    }
-
-    .sobre h3 {
-        font-size: 16px;
-    }
-
-    .sobre div iframe {
-        width: 100%;
-        max-width: none;
-    }
-
-    /* Servicios */
-    .servicios__titulo {
-        font-size: 24px;
-    }
-
-    .servicio__titulo {
-        font-size: 18px;
-    }
-
-    .servicios__lista {
-        gap: 20px;
-    }
-
-    /* Autos en venta */
-    .autos-en-venta {
-        grid-template-columns: 1fr; /* Una tarjeta por fila */
-        gap: 10px;
-    }
-
-    .auto img {
-        height: 100px; /* Reducir altura de las imágenes */
-    }
-
-    .auto {
-        padding: 10px;
-    }
-
-    /* Fixed */
-    .fixed {
-        bottom: 10px;
-        right: 10px;
     }
 }
