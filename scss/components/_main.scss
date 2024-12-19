@@ -100,7 +100,7 @@
 
         input[type="submit"] {
             padding: 15px;
-            @include boton(#3a8dff, #2872cc); // Usando mixin para el botón
+            @include boton(#c41d1d, #a11b1b); // Usando mixin para el botón
         }
     }
 }
@@ -260,7 +260,7 @@
             }
             
             a {
-                @include boton(#007bff, #0056b3);
+                @include boton(#c41d1d, #a11b1b);
                 text-decoration: none;
                 font-size: 16px;
                 display: inline-block;
@@ -325,7 +325,7 @@
                 transition: border-color 0.2s;
 
                 &:focus {
-                    border-color: #007bff;
+                    border-color: #c41d1d;
                     outline: none;
                 }
             }
@@ -338,7 +338,7 @@
 
         input[type="submit"] {
             width: 100%;
-            @include boton(#007bff, #0056b3);
+            @include boton(#c41d1d, #a11b1b);
             font-weight: bold;
         }
     }

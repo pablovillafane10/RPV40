@@ -168,7 +168,7 @@ header .top-bar nav ul li a:hover {
 }
 .presupuesto form input[type=submit] {
   padding: 15px;
-  background-color: #3a8dff;
+  background-color: #c41d1d;
   color: #f5f5f5;
   border: none;
   padding: 12px 30px;
@@ -177,7 +177,7 @@ header .top-bar nav ul li a:hover {
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 .presupuesto form input[type=submit]:hover {
-  background-color: #2872cc;
+  background-color: #a11b1b;
   transform: scale(1.05);
 }
 .presupuesto form input[type=submit]:focus {
@@ -327,7 +327,7 @@ header .top-bar nav ul li a:hover {
   margin-bottom: 12px;
 }
 .autos-en-venta .auto .card-body a {
-  background-color: #007bff;
+  background-color: #c41d1d;
   color: #f5f5f5;
   border: none;
   padding: 12px 30px;
@@ -340,7 +340,7 @@ header .top-bar nav ul li a:hover {
   margin-top: auto;
 }
 .autos-en-venta .auto .card-body a:hover {
-  background-color: #0056b3;
+  background-color: #a11b1b;
   transform: scale(1.05);
 }
 .autos-en-venta .auto .card-body a:focus {
@@ -400,7 +400,7 @@ header .top-bar nav ul li a:hover {
 .formularioventa form div input[type=tel]:focus,
 .formularioventa form div input[type=number]:focus,
 .formularioventa form div textarea:focus {
-  border-color: #007bff;
+  border-color: #c41d1d;
   outline: none;
 }
 .formularioventa form div textarea {
@@ -409,7 +409,7 @@ header .top-bar nav ul li a:hover {
 }
 .formularioventa form input[type=submit] {
   width: 100%;
-  background-color: #007bff;
+  background-color: #c41d1d;
   color: #f5f5f5;
   border: none;
   padding: 12px 30px;
@@ -419,7 +419,7 @@ header .top-bar nav ul li a:hover {
   font-weight: bold;
 }
 .formularioventa form input[type=submit]:hover {
-  background-color: #0056b3;
+  background-color: #a11b1b;
   transform: scale(1.05);
 }
 .formularioventa form input[type=submit]:focus {
