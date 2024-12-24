@@ -632,7 +632,7 @@ footer .sobre div img {
     color: #c41d1d;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   /* Header */
   header .top-bar img {
     width: 80px;
